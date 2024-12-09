@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-3">
               <p className="font-medium text-sm text-gray-6">Follow Us:</p>
               <div className="flex items-center gap-1.5">
-                {['facebook', 'twitter', 'linkedin', 'instagram'].map((platform) => (
+                {['twitter','telegram'].map((platform) => (
                   <a
                     key={platform}
                     id={`${platform}FooterBtn`}
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                     <img
                       src={`/images/icons/${platform}.svg`}
                       alt={platform}
-                      className="w-5 h-5 fill-current"
+                      className="w-8 h-8 fill-current"
                     />
                   </a>
                 ))}

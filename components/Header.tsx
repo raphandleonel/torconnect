@@ -91,18 +91,18 @@ const Header: React.FC = () => {
 
         {/* Social Links */}
         <div className="hidden lg:flex items-center gap-4">
-          {["facebook", "twitter", "linkedin", "instagram"].map((platform) => (
+          {["twitter", "telegram"].map((platform) => (
             <a
               key={platform}
               href="#"
               aria-label={`${platform} social link`}
-              className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-blue-400 transition-colors"
+              className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-blue-400 transition-colors"
             >
               <Image
                 src={`/images/icons/${platform}.svg`}
                 alt={`${platform} icon`}
-                width={16}
-                height={16}
+                width={32}
+                height={32}
               />
             </a>
           ))}
