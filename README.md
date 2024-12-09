@@ -1,26 +1,4 @@
-# Blog with Comment
-
-This project adds commenting functionality to [Next.js blog application](https://github.com/vercel/next.js/tree/canary/examples/blog) using Upstash and Auth0.
-
-The comment box requires Auth0 authentication for users to add new comments. A user can delete their own comment. Also admin user can delete any comment.
-
-Comments are stored in Serverless Redis ([Upstash](http://upstash.com/)).
-
-### Demo
-
-[https://blog-with-comment.vercel.app/](https://blog-with-comment.vercel.app/)
-
-## `1` Project set up
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
-with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the
-example:
-
-```bash
-npx create-next-app --example blog-with-comment blog-with-comment-app
-```
-
-## `2` Set up environment variables
+## `1` Set up environment variables
 
 Copy the `.env.local.example` file in this directory to `.env.local` (which will be ignored by Git):
 
