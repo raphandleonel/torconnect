@@ -77,12 +77,11 @@ export default function PostPage({
             <section className="p-4">
               <div className="text-center">
                 {post.category && (
-                  <Link
-                    href={`/category/${post.category.toLowerCase()}`}
+                  <p
                     className="inline-flex text-blue bg-blue/[0.08] font-medium text-sm py-1 px-3 rounded-full mb-1"
                   >
                     {post.category}
-                  </Link>
+                  </p>
                 )}
                 <h1 className="font-bold text-2xl sm:text-4xl lg:text-5xl text-white mb-5">
                   {post.title.split(':')[0]}
@@ -99,18 +98,20 @@ export default function PostPage({
                 </div>
               </div>
               {/* Breadcrumb */}
-              <nav className="text-lg text-gray-4 mt-6 flex items-center">
-                <ol className="flex items-center space-x-2">
-                  <li>
-                    <Link href="/" className="hover:text-blue-light-4 transition-colors">
+              <nav className="text-sm sm:text-base text-gray-4 mt-6 flex items-center">
+                <ol className="flex flex-wrap items-center gap-1">
+                  {/* Home */}
+                  <li className="flex items-center">
+                    <Link
+                      href="/"
+                      className="hover:text-blue-600 transition-colors"
+                    >
                       Home
                     </Link>
-                  </li>
-                  <li>
-                    <span className="text-gray-5">
+                    <span className="text-gray-5 mx-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-4 h-4 mx-1"
+                        className="w-4 h-4"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -124,16 +125,19 @@ export default function PostPage({
                       </svg>
                     </span>
                   </li>
-                  <li>
-                    <Link href="/posts" className="hover:text-blue-4 transition-colors">
+
+                  {/* Posts */}
+                  <li className="flex items-center">
+                    <Link
+                      href="/posts"
+                      className="hover:text-blue-600 transition-colors"
+                    >
                       Posts
                     </Link>
-                  </li>
-                  <li>
-                    <span className="text-gray-5">
+                    <span className="text-gray-5 mx-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-4 h-4 mx-1"
+                        className="w-4 h-4"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -147,11 +151,14 @@ export default function PostPage({
                       </svg>
                     </span>
                   </li>
-                  <li className="text-gray-3 truncate font-semibold">
+
+                  {/* Current Page */}
+                  <li className="truncate font-semibold text-gray-2 overflow-hidden text-ellipsis max-sm:max-w-[150px]">
                     {post.title}
                   </li>
                 </ol>
               </nav>
+
 
               {(post.image || post.coverImage) && (
                 <div className="relative w-full mt-6 mb-8">
@@ -269,7 +276,7 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
   const relatedPosts = allPosts.filter(
     (otherPost) =>
       otherPost.slug !== post.slug && otherPost.category === post.category
-  ).splice(0,5)
+  ).splice(0, 5)
 
   return {
     props: {
