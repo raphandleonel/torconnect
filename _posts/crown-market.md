@@ -5,7 +5,7 @@ date: "2024-12-03"
 image: "/images/posts/crown/crown-market-cover.png"
 coverImage: "/images/posts/crown/crown-market-cover.png"
 category: "Dark Web Marketplaces"
-tags: ["Darknet Markets","Dark Web", "Crown Market", "Cybersecurity", "Tor Network"]
+tags: ["Darknet Markets", "Dark Web", "Crown Market", "Cybersecurity", "Tor Network"]
 author: "TorConnect Team"
 authorImage: "/images/authors/torconnect-team.png"
 authorBio: "Experts in providing insights and guides to help you navigate the darknet securely and effectively."

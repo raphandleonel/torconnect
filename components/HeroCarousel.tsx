@@ -9,7 +9,11 @@ export default function HeroCarousel({ allPosts }: { allPosts: Post[] }) {
 
   useEffect(() => {
     const featuredMarkets = allPosts.filter((post) => post.category === 'Dark Web Marketplaces');
-    setHeroItems(featuredMarkets);
+  // Filter posts to exclude "Dark Web Marketplaces" and take the first 5
+  const latestPosts = allPosts
+    .filter((post) => post.category !== "Dark Web Marketplaces")
+    .slice(0, 5);
+    setHeroItems([...featuredMarkets, ...latestPosts]);
   }, [allPosts]);
 
   useEffect(() => {

@@ -3,9 +3,21 @@ import Link from "next/link";
 import { Post } from "interfaces";
 
 export default function FeaturedMarkets({ allPosts }: { allPosts: Post[] }) {
-  const featuredMarkets = allPosts.filter(
-    (post) => post.category === "Dark Web Marketplaces"
-  ).slice(0, 4);
+const featuredMarkets = allPosts
+  .filter((post) => post.category === "Dark Web Marketplaces")
+  .sort((a, b) => {
+    // Swap Hades Market and Erebus Market
+    if (a.title.includes("Hades Market") && b.title.includes("Erebus Market")) {
+      return -1;
+    }
+    if (a.title.includes("Erebus Market") && b.title.includes("Hades Market")) {
+      return 1; 
+    }
+    // Otherwise, keep alphabetical order
+    return a.title.localeCompare(b.title);
+  })
+  .slice(0, 4);
+
 
   const renderColoredTitle = (title: string) => {
     const words = title.split(" ");
@@ -25,7 +37,7 @@ export default function FeaturedMarkets({ allPosts }: { allPosts: Post[] }) {
     <section className="py-16">
       <div className="max-w-[1170px] mx-auto px-4 sm:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-8">
-          {renderColoredTitle("Top Marketplaces")}
+          Top {renderColoredTitle("Darknet Marketplaces")}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredMarkets.slice(0, 6).map((market) => (
