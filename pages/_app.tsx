@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const siteDescription =
     "Learn how to use the Tor Browser, explore the Dark Web safely, and access .onion sites and darknet markets. Stay updated with the latest guides and resources.";
   const siteUrl = "https://torconnect.io";
-  const ogImage = `${siteUrl}/images/logo.png`; 
+  const ogImage = `${siteUrl}/images/logo/logo.png`; 
 
   return (
     <Auth0Provider
@@ -57,7 +57,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
               publisher: {
                 "@type": "Organization",
                 name: siteName,
-                logo: `${siteUrl}/images/logo.svg`,
+                logo: `${siteUrl}/images/logo/logo.svg`,
               },
             }),
           }}
