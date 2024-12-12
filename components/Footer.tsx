@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -13,7 +14,7 @@ const Footer: React.FC = () => {
           {/* Links Section */}
           <div>
             <ul className="flex flex-wrap items-center gap-2.5">
-              {['Privacy', 'Terms', 'Contact', 'Contribute'].map((link, index) => (
+              {['Home', 'Posts', 'Contact'].map((link, index) => (
                 <React.Fragment key={link}>
                   {index > 0 && (
                     <li>
@@ -21,14 +22,14 @@ const Footer: React.FC = () => {
                     </li>
                   )}
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href={link =='Home' ? '/': `/${link.toLowerCase()}`}
                       className="group leading-none flex text-sm text-gray-6 hover:text-blue-light transition-colors"
                     >
                       <span className="bg-gradient-to-r from-dark to-dark bg-[length:0px_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 group-hover:bg-[length:100%_1px]">
                         {link}
                       </span>
-                    </a>
+                    </Link>
                   </li>
                 </React.Fragment>
               ))}

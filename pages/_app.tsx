@@ -4,6 +4,7 @@ import Head from "next/head";
 import { Auth0Provider } from "@auth0/auth0-react";
 import Preloader from "@/components/Preloader";
 import "../public/css/index.css";
+import "../public/css/global.css";
 import Layout from "@/components/Layout";
 
 export default function MyApp({ Component, pageProps }: AppProps) {

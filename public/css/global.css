@@ -1,0 +1,6 @@
+.custom-prose-class ul li a {
+  color: rgb(255 69 98/ 1) !important;
+}
+.custom-prose-class p {
+color:  hsla(0, 0%, 88%, .75) !important;
+}

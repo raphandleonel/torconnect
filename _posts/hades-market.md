@@ -1,5 +1,5 @@
 ---
-title: "Hades Market: The New Silk Road of the Dark Web"
+title: "Hades Market"
 excerpt: "Discover how Hades Market has risen as the premier dark web marketplace, offering unparalleled security, privacy, and an extensive catalog of illicit goods, reminiscent of Silk Road."
 date: "2024-12-03"
 image: "/images/posts/hades/hades-market-cover.png"
@@ -12,7 +12,7 @@ authorBio: "Experts in providing insights and guides to help you navigate the da
 readTime: "6 min"
 ---
 
-**Hades Market: The New Silk Road of the Dark Web**
+**Hades Market**
 
 Launched in early 2023, **Hades Market** has quickly gained recognition as the premier destination for dark web trade, drawing comparisons to the infamous Silk Road. Offering a secure, anonymous marketplace, Hades Market facilitates the buying and selling of illicit goods while prioritizing user privacy through the **Tor network**.
 
@@ -49,11 +49,11 @@ These features have positioned Hades Market as one of the safest platforms on th
 
 Hades Market is accessible via the Tor browser using the following onion links:
 
-- [hadesfouu52vnzzgxrfaiysz2istn2pf63gskps3dpjyubwzxx2z25yd.onion](http://hadesfouu52vnzzgxrfaiysz2istn2pf63gskps3dpjyubwzxx2z25yd.onion)
+- [hadesfouu52vnzzgxrfaiysz2istn2pf63gskps3dpjyubwzxx2z25yd.onion](http://hadesfouu52vnzzgxrfaiysz2istn2pf63gskps3dpjyubwzxx2z25yd.onion) [copy-button|hadesfouu52vnzzgxrfaiysz2istn2pf63gskps3dpjyubwzxx2z25yd.onion]
 - [hadesovrtfonwbw2ylfv4n7z6jpykxhw5yghnxfpu3nbhgzg2t7lq3yd.onion](http://hadesovrtfonwbw2ylfv4n7z6jpykxhw5yghnxfpu3nbhgzg2t7lq3yd.onion
-)
+) [copy-button|hadesovrtfonwbw2ylfv4n7z6jpykxhw5yghnxfpu3nbhgzg2t7lq3yd.onion]
 - [hades4xilrzf7uyhve3rtp2e6rzuyy2o7xbz7la5xd5cln4zgaldr5yd.onion](http://hades4xilrzf7uyhve3rtp2e6rzuyy2o7xbz7la5xd5cln4zgaldr5yd.onion
-)
+) [copy-button|hades4xilrzf7uyhve3rtp2e6rzuyy2o7xbz7la5xd5cln4zgaldr5yd.onion]
 
 These links require the **Tor Browser** for secure and anonymous access.
 

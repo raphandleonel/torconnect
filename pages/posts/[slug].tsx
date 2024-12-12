@@ -173,7 +173,7 @@ export default function PostPage({
                 </div>
               )}
 
-              <div className="prose prose-lg prose-invert text-white max-w-full break-words overflow-hidden">
+              <div className="prose prose-lg prose-invert text-white max-w-full break-words overflow-hidden custom-prose-class">
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
               <div className="flex justify-center w-full mt-10">

@@ -1,5 +1,5 @@
 ---
-title: "Anubis Market: A New Contender in the Dark Web Marketplace"
+title: "Anubis Market"
 excerpt: "Discover how Anubis Market has rapidly emerged as a significant player in the dark web marketplace with its strong focus on user privacy, security, and an extensive range of offerings."
 date: "2024-12-07"
 image: "/images/posts/anubis/anubis-market.png"
@@ -12,7 +12,7 @@ authorBio: "Experts in providing insights and guides to help you navigate the da
 readTime: "4 min"
 ---
 
-**Anubis Market: A New Contender in the Dark Web Marketplace**
+**Anubis Market**
 
 Anubis Market, which debuted in early 2024, quickly established itself as one of the prominent players on the Tor network. Emerging at a time when the dark web was witnessing the shutdown of several major platforms, Anubis sought to fill the gap left by these closures. The market is designed with a focus on user privacy, security, and a broad range of illicit goods and services. It primarily caters to an English-speaking audience but has attracted global attention due to its extensive offerings.
 
@@ -50,8 +50,11 @@ Since its launch, Anubis Market has been attracting users from other closed mark
 To access Anubis Market, use the following onion links on the Tor network:
 
 - [anubisqr57mqcf3vfqv3hknwbpux5ioqs6atmpwrqive6x6wrkdtrwyd.onion](http://anubisqr57mqcf3vfqv3hknwbpux5ioqs6atmpwrqive6x6wrkdtrwyd.onion)
+[copy-button|anubisqr57mqcf3vfqv3hknwbpux5ioqs6atmpwrqive6x6wrkdtrwyd.onion]
 - [anubisrjpfcc43t4r4zl5ovayivjxqkn63ykkzfngjqvk26lnbgcyryd.onion](http://anubisrjpfcc43t4r4zl5ovayivjxqkn63ykkzfngjqvk26lnbgcyryd.onion)
+[copy-button|anubisrjpfcc43t4r4zl5ovayivjxqkn63ykkzfngjqvk26lnbgcyryd.onion]
 - [anubisgrlku6ohajojoq52kr6nzixtkfp3jc3pdncgdoykgyfxfutgyd.onion](http://anubisgrlku6ohajojoq52kr6nzixtkfp3jc3pdncgdoykgyfxfutgyd.onion)
+[copy-button|anubisgrlku6ohajojoq52kr6nzixtkfp3jc3pdncgdoykgyfxfutgyd.onion]
 
 ### A Growing Reputation
 

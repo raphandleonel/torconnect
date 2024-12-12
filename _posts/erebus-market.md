@@ -1,5 +1,5 @@
 ---
-title: "Erebus Market: The New Dark Web Hub for Anonymous Transactions"
+title: "Erebus Market"
 excerpt: "Discover how Erebus Market has quickly become a prominent dark web marketplace, prioritizing user security, privacy, and a diverse range of illicit offerings."
 date: "2024-12-03"
 image: "/images/posts/erebus/erebus-market-cover.png"
@@ -12,7 +12,7 @@ authorBio: "Experts in providing insights and guides to help you navigate the da
 readTime: "5 min"
 ---
 
-**Erebus Market: The New Dark Web Hub for Anonymous Transactions**
+**Erebus Market**
 
 Launched in mid-2024, **Erebus Market** has rapidly established itself as a leading marketplace on the **Tor network**, catering to users who prioritize security and anonymity. With its user-friendly interface and focus on privacy, Erebus Market has become a key destination for individuals seeking a reliable dark web trading platform.
 
@@ -47,9 +47,9 @@ Erebus Market supports transactions in both **Bitcoin (BTC)** and **Monero (XMR)
 
 Users can access Erebus Market via the Tor browser using the following onion links:
 
-- [erebuscof7b7pw6b7es6ozeabwok5lkbjjo6lmdzfrmr6wfob4ebdoid.onion](http://erebuscof7b7pw6b7es6ozeabwok5lkbjjo6lmdzfrmr6wfob4ebdoid.onion)
-- [erebusysfmqgottllpy7ndzr7ye6mi5fvih2uwsevkyscchir36mzaid.onion](http://erebusysfmqgottllpy7ndzr7ye6mi5fvih2uwsevkyscchir36mzaid.onion)
-- [erebus2s47cd3i2v36facf2wwzeshcvzvwq25j6ehwmac4cssofrgsad.onion](http://erebus2s47cd3i2v36facf2wwzeshcvzvwq25j6ehwmac4cssofrgsad.onion)
+- [erebuscof7b7pw6b7es6ozeabwok5lkbjjo6lmdzfrmr6wfob4ebdoid.onion](http://erebuscof7b7pw6b7es6ozeabwok5lkbjjo6lmdzfrmr6wfob4ebdoid.onion) [copy-button|erebuscof7b7pw6b7es6ozeabwok5lkbjjo6lmdzfrmr6wfob4ebdoid.onion]
+- [erebusysfmqgottllpy7ndzr7ye6mi5fvih2uwsevkyscchir36mzaid.onion](http://erebusysfmqgottllpy7ndzr7ye6mi5fvih2uwsevkyscchir36mzaid.onion) [copy-button|erebusysfmqgottllpy7ndzr7ye6mi5fvih2uwsevkyscchir36mzaid.onion]
+- [erebus2s47cd3i2v36facf2wwzeshcvzvwq25j6ehwmac4cssofrgsad.onion](http://erebus2s47cd3i2v36facf2wwzeshcvzvwq25j6ehwmac4cssofrgsad.onion) [copy-button|erebus2s47cd3i2v36facf2wwzeshcvzvwq25j6ehwmac4cssofrgsad.onion]
 
 ### Estimated Value and Market Impact
 
