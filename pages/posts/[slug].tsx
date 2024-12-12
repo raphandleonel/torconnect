@@ -72,6 +72,15 @@ export default function PostPage({
                     content={tag}
                   />
                 ))}
+
+              <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"></script>
+              <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments)}
+                gtag('js', new Date());
+
+                gtag('config', 'G-NSNM5F6DNF');
+              </script>
             </Head>
 
             <section className="p-4">
