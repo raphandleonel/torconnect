@@ -8,6 +8,7 @@ import Container from "@/components/container";
 import Link from "next/link";
 import Image from "next/image";
 import Comment from "@/components/comment";
+import Script from "next/script";
 
 export default function PostPage({
   post,
@@ -72,14 +73,20 @@ export default function PostPage({
                     content={tag}
                   />
                 ))}
-              <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"></script>
-              <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
 
-                gtag('config', 'G-NSNM5F6DNF');
-              </script>
+              {/* Google Analytics */}
+              <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"
+                strategy="afterInteractive"
+              />
+              <Script id="google-analytics" strategy="afterInteractive">
+                {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-NSNM5F6DNF');
+        `}
+              </Script>
             </Head>
 
             <section className="p-4">

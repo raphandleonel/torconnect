@@ -6,6 +6,7 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import "../public/css/index.css";
 import "../public/css/global.css";
 import Layout from "@/components/Layout";
+import Script from "next/script";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const siteName = "TorConnect";
@@ -43,34 +44,19 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
         {/* Canonical Link */}
         <link rel="canonical" href={siteUrl} />
-
-        {/* Schema Markup */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              name: `${siteName} - Explore the Dark Web with Safety`,
-              description: siteDescription,
-              url: siteUrl,
-              image: ogImage,
-              publisher: {
-                "@type": "Organization",
-                name: siteName,
-                logo: `${siteUrl}/images/logo/logo.svg`,
-              },
-            }),
-          }}
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"
+          strategy="afterInteractive"
         />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"></script>
-        <script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'G-NSNM5F6DNF');
-        </script>
+        `}
+        </Script>
       </Head>
       <Layout>
         <Component {...pageProps} />
