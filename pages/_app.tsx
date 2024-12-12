@@ -19,7 +19,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       clientId={process.env.NEXT_PUBLIC_AUTH0_CLIENT_ID}
       domain={process.env.NEXT_PUBLIC_AUTH0_DOMAIN}
     >
-      <Preloader />
+      {/* <Preloader /> */}
       <Head>
         <title>{`${siteName} - Explore the Dark Web with Safety and Confidence`}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
