@@ -2,7 +2,7 @@ import "tailwindcss/tailwind.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Auth0Provider } from "@auth0/auth0-react";
-import Preloader from "@/components/Preloader";
+// import Preloader from "@/components/Preloader";
 import "../public/css/index.css";
 import "../public/css/global.css";
 import Layout from "@/components/Layout";
