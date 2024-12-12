@@ -44,20 +44,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
         {/* Canonical Link */}
         <link rel="canonical" href={siteUrl} />
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-NSNM5F6DNF');
-        `}
-        </Script>
+  
       </Head>
+      
       <Layout>
         <Component {...pageProps} />
       </Layout>

@@ -73,22 +73,20 @@ export default function PostPage({
                     content={tag}
                   />
                 ))}
-
-              {/* Google Analytics */}
-              <Script
-                src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"
-                strategy="afterInteractive"
-              />
-              <Script id="google-analytics" strategy="afterInteractive">
-                {`
+            </Head>
+            {/* Google Analytics */}
+            <Script
+              src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-NSNM5F6DNF');
         `}
-              </Script>
-            </Head>
-
+            </Script>
             <section className="p-4">
               <div className="text-center">
                 {post.category && (
