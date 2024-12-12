@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const siteDescription =
     "Learn how to use the Tor Browser, explore the Dark Web safely, and access .onion sites and darknet markets. Stay updated with the latest guides and resources.";
   const siteUrl = "https://torconnect.io";
-  const ogImage = `${siteUrl}/images/logo/logo.png`; 
+  const ogImage = `${siteUrl}/images/logo/logo.png`;
 
   return (
     <Auth0Provider
@@ -63,6 +63,14 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             }),
           }}
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-NSNM5F6DNF');
+        </script>
       </Head>
       <Layout>
         <Component {...pageProps} />
