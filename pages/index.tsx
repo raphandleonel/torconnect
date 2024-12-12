@@ -9,6 +9,7 @@ import AboutDarkWeb from "@/components/AboutDarkWeb";
 import FeaturedMarkets from "@/components/FeaturedMarkets";
 import LatestBlogPosts from "@/components/LatestBlogPosts";
 import Container from "@/components/container";
+import Script from "next/script";
 
 export default function Home({ allPosts }: InferGetStaticPropsType<typeof getStaticProps>) {
   const siteName = "TorConnect";
@@ -43,64 +44,18 @@ export default function Home({ allPosts }: InferGetStaticPropsType<typeof getSta
         <meta name="twitter:title" content={`${siteName} - Safely Explore the Dark Web`} />
         <meta name="twitter:description" content={siteDescription} />
         <meta name="twitter:image" content={ogImage} />
-
-        {/* Schema Markup */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              name: `${siteName} - Safely Explore the Dark Web`,
-              description: siteDescription,
-              url: siteUrl,
-              image: ogImage,
-              publisher: {
-                "@type": "Organization",
-                name: siteName,
-                logo: `${siteUrl}/images/logo/logo.svg`,
-              },
-              mainEntity: {
-                "@type": "FAQPage",
-                mainEntity: [
-                  {
-                    "@type": "Question",
-                    name: "What is the Dark Web?",
-                    acceptedAnswer: {
-                      "@type": "Answer",
-                      text: "The dark web is a part of the internet that requires specific software like Tor Browser to access and is known for its privacy and anonymity.",
-                    },
-                  },
-                  {
-                    "@type": "Question",
-                    name: "How can I access the dark web safely?",
-                    acceptedAnswer: {
-                      "@type": "Answer",
-                      text: "To access the dark web safely, use Tor Browser, a secure VPN, and follow trusted resources like TorConnect for guidance.",
-                    },
-                  },
-                  {
-                    "@type": "Question",
-                    name: "What are the top darknet marketplaces in 2024?",
-                    acceptedAnswer: {
-                      "@type": "Answer",
-                      text: "The top darknet marketplaces include Anubis Market, Crown Market, Hades Market, and Erebus Market, known for their security and diverse offerings.",
-                    },
-                  },
-                ],
-              },
-            }),
-          }}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"
+          strategy="afterInteractive"
         />
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"></script>
-        <script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
+          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'G-NSNM5F6DNF');
-        </script>
+        `}
+        </Script>
       </Head>
 
       <Container>
