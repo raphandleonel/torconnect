@@ -30,6 +30,23 @@ export default function PostPage({
 
   const readTime = post.readTime || "1 min read";
 
+  const breadcrumbItems = [
+    { name: "Home", url: "/" },
+    { name: "Posts", url: "/posts" },
+    { name: post.title, url: `/posts/${post.slug}` },
+  ];
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbItems.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.name,
+      "item": `https://torconnect.io${item.url}`,
+    })),
+  };
+
   return (
     <Container>
       {router.isFallback ? (
@@ -73,6 +90,10 @@ export default function PostPage({
                     content={tag}
                   />
                 ))}
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+              />
             </Head>
             {/* Google Analytics */}
             <Script
@@ -113,62 +134,37 @@ export default function PostPage({
               {/* Breadcrumb */}
               <nav className="text-sm sm:text-base text-gray-4 mt-6 flex items-center">
                 <ol className="flex flex-wrap items-center gap-1">
-                  {/* Home */}
-                  <li className="flex items-center">
-                    <Link
-                      href="/"
-                      className="hover:text-blue-600 transition-colors"
-                    >
-                      Home
-                    </Link>
-                    <span className="text-gray-5 mx-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-4 h-4"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
+                  {breadcrumbItems.map((item, index) => (
+                    <li key={item.url} className="flex items-center">
+                      <Link
+                        href={item.url}
+                        className={`hover:text-blue-600 transition-colors ${index === breadcrumbItems.length - 1
+                            ? "truncate font-semibold text-gray-2  overflow-hidden text-ellipsis max-sm:max-w-[150px]"
+                            : ""
+                          }`}
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </span>
-                  </li>
-
-                  {/* Posts */}
-                  <li className="flex items-center">
-                    <Link
-                      href="/posts"
-                      className="hover:text-blue-600 transition-colors"
-                    >
-                      Posts
-                    </Link>
-                    <span className="text-gray-5 mx-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-4 h-4"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </span>
-                  </li>
-
-                  {/* Current Page */}
-                  <li className="truncate font-semibold text-gray-2 overflow-hidden text-ellipsis max-sm:max-w-[150px]">
-                    {post.title}
-                  </li>
+                        {item.name}
+                      </Link>
+                      {index < breadcrumbItems.length - 1 && (
+                        <span className="text-gray-5 mx-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-4 h-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </span>
+                      )}
+                    </li>
+                  ))}
                 </ol>
               </nav>
 
