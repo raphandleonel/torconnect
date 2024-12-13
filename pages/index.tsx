@@ -26,7 +26,7 @@ export default function Home({ allPosts }: InferGetStaticPropsType<typeof getSta
         <meta name="description" content={siteDescription} />
         <meta
           name="keywords"
-          content="dark web, darknet marketplaces, Tor browser, anonymity tools, secure browsing, privacy, hidden web, darknet guides"
+          content="dark web, dark net, deep web, darknet marketplaces, Tor browser, anonymity tools, secure browsing, privacy, hidden web, darknet guides"
         />
         <meta name="author" content="TorConnect Team" />
         <link rel="canonical" href={siteUrl} />
