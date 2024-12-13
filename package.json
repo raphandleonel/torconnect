@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-     "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@auth0/auth0-react": "^1.12.0",

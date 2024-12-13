@@ -30,6 +30,25 @@ export default function PostPage({
 
   const readTime = post.readTime || "1 min read";
 
+    // Generate Keywords
+// Generate Keywords
+const keywords = [...new Set([
+  ...(post.tags || []),
+  post.category,
+  post.title,
+  "dark web",
+  "privacy",
+  "security",
+  "Tor Browser",
+  "Tor Project",
+  "Darknet",
+  "Anonymity",
+  "Online Privacy",
+  "Dark Web Marketplace",
+  "Dark Web Market",
+])].filter(Boolean).join(", ");
+
+  
   const breadcrumbItems = [
     { name: "Home", url: "/" },
     { name: "Posts", url: "/posts" },
@@ -60,6 +79,7 @@ export default function PostPage({
               <meta name="description" content={post.excerpt} />
               <meta name="author" content={post.author || "Unknown"} />
               <meta property="og:title" content={post.title} />
+               <meta name="keywords" content={keywords} />
               <meta property="og:description" content={post.excerpt} />
               <meta
                 property="og:image"
