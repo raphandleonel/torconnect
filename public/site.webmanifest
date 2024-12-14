@@ -21,15 +21,10 @@
       "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
     }
   ],
-  "theme_color": "#0A0B1E",
-  "background_color": "#0A0B1E",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "start_url": "/",
   "display": "standalone",
   "description": "TorConnect: Your trusted guide to exploring the dark web safely. Learn about Tor Browser, darknet markets, and privacy tools."
