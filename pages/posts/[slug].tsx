@@ -75,23 +75,26 @@ export default function PostPage({
           {/* Main Content */}
           <div className="lg:w-3/4">
             <Head>
-              <title>{post.title}</title>
-              <meta name="description" content={post.excerpt} />
+              <title>{post.title || "TorConnect Blog"}</title>
+              <meta name="description" content={post.excerpt || "Learn more on TorConnect"} />
               <meta name="author" content={post.author || "Unknown"} />
-              <meta property="og:title" content={post.title} />
-              <meta name="keywords" content={keywords} />
-              <meta property="og:description" content={post.excerpt} />
+              <meta property="og:title" content={post.title || "TorConnect Blog"} />
+              <meta
+                property="og:description"
+                content={post.excerpt || "Explore topics related to the dark web, privacy, and security."}
+              />
               <meta
                 property="og:image"
-                content={post.image || "/default-image.jpg"}
+                content={post.image || `${siteUrl}/logo/logo.png`}
               />
+              <meta property="og:url" content={`${siteUrl}/posts/${post.slug}`} />
               <meta property="og:type" content="article" />
-              <meta
-                property="article:published_time"
-                content={new Date(post.date).toISOString()}
-              />
-              {/* Canonical Link */}
-              <link rel="canonical" href={`${siteUrl}/posts/${post.slug}`} />
+              {post.date && (
+                <meta
+                  property="article:published_time"
+                  content={new Date(post.date).toISOString()}
+                />
+              )}
               {post.date && (
                 <meta
                   property="article:modified_time"
@@ -104,19 +107,16 @@ export default function PostPage({
                   content={post.category}
                 />
               )}
-              {post.tags &&
-                post.tags.map((tag) => (
-                  <meta
-                    key={tag}
-                    property="article:tag"
-                    content={tag}
-                  />
-                ))}
+              {post.tags?.map((tag) => (
+                <meta key={tag} property="article:tag" content={tag} />
+              ))}
+              <link rel="canonical" href={`${siteUrl}/posts/${post.slug}`} />
               <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
               />
             </Head>
+
             {/* Google Analytics */}
             <Script
               src="https://www.googletagmanager.com/gtag/js?id=G-NSNM5F6DNF"
