@@ -1,5 +1,5 @@
 ---
-title: "Understanding Dark Web Security: How to Stay Safe Online"
+title: "Understanding Dark Web Security"
 excerpt: "Explore the essential security practices for navigating the dark web safely, from securing your identity to avoiding scams."
 date: "2024-12-02"
 category: "Guides"

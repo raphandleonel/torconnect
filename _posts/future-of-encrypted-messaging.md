@@ -1,5 +1,5 @@
 ---
-title: "The Future of Encrypted Messaging: Tools You Should Know"
+title: "The Future of Encrypted Messaging"
 excerpt: "Discover the most promising encrypted messaging tools shaping the future of private communication."
 date: "2024-12-02"
 category: "Guides"

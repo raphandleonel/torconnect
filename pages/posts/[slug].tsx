@@ -75,7 +75,7 @@ export default function PostPage({
           {/* Main Content */}
           <div className="lg:w-3/4">
             <Head>
-              <title>{post.title} | TorConnect Blog</title>
+              <title>{post.title}</title>
               <meta name="description" content={post.excerpt} />
               <meta name="author" content={post.author || "Unknown"} />
               <meta property="og:title" content={post.title} />

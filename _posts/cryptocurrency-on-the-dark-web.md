@@ -1,5 +1,5 @@
 ---
-title: "Cryptocurrency on the Dark Web: A Double-Edged Sword"
+title: "Cryptocurrency on the Dark Web"
 excerpt: "Explore the role of cryptocurrency on the dark web, its advantages, and the challenges it presents."
 date: "2024-12-02"
 category: "Guides"
