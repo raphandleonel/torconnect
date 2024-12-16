@@ -19,7 +19,7 @@ export default function PostPage({
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
-
+  const siteUrl = "https://torconnect.io"
   const lastUpdated = post.date
     ? new Date(post.date).toLocaleDateString("en-US", {
       year: "numeric",
@@ -30,25 +30,25 @@ export default function PostPage({
 
   const readTime = post.readTime || "1 min read";
 
-    // Generate Keywords
-// Generate Keywords
-const keywords = [...new Set([
-  ...(post.tags || []),
-  post.category,
-  post.title,
-  "dark web",
-  "privacy",
-  "security",
-  "Tor Browser",
-  "Tor Project",
-  "Darknet",
-  "Anonymity",
-  "Online Privacy",
-  "Dark Web Marketplace",
-  "Dark Web Market",
-])].filter(Boolean).join(", ");
+  // Generate Keywords
+  // Generate Keywords
+  const keywords = [...new Set([
+    ...(post.tags || []),
+    post.category,
+    post.title,
+    "dark web",
+    "privacy",
+    "security",
+    "Tor Browser",
+    "Tor Project",
+    "Darknet",
+    "Anonymity",
+    "Online Privacy",
+    "Dark Web Marketplace",
+    "Dark Web Market",
+  ])].filter(Boolean).join(", ");
 
-  
+
   const breadcrumbItems = [
     { name: "Home", url: "/" },
     { name: "Posts", url: "/posts" },
@@ -79,7 +79,7 @@ const keywords = [...new Set([
               <meta name="description" content={post.excerpt} />
               <meta name="author" content={post.author || "Unknown"} />
               <meta property="og:title" content={post.title} />
-               <meta name="keywords" content={keywords} />
+              <meta name="keywords" content={keywords} />
               <meta property="og:description" content={post.excerpt} />
               <meta
                 property="og:image"
@@ -90,6 +90,8 @@ const keywords = [...new Set([
                 property="article:published_time"
                 content={new Date(post.date).toISOString()}
               />
+              {/* Canonical Link */}
+              <link rel="canonical" href={`${siteUrl}/posts/${post.slug}`} />
               {post.date && (
                 <meta
                   property="article:modified_time"
@@ -159,8 +161,8 @@ const keywords = [...new Set([
                       <Link
                         href={item.url}
                         className={`hover:text-blue-600 transition-colors ${index === breadcrumbItems.length - 1
-                            ? "truncate font-semibold text-gray-2  overflow-hidden text-ellipsis max-sm:max-w-[150px]"
-                            : ""
+                          ? "truncate font-semibold text-gray-2  overflow-hidden text-ellipsis max-sm:max-w-[150px]"
+                          : ""
                           }`}
                       >
                         {item.name}

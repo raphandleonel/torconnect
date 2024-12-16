@@ -6,7 +6,6 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import "../public/css/index.css";
 import "../public/css/global.css";
 import Layout from "@/components/Layout";
-import Script from "next/script";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const siteName = "TorConnect";
