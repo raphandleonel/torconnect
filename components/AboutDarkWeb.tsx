@@ -5,7 +5,7 @@ export default function AboutDarkWeb() {
   return (
     <section className="py-16">
       <div className="max-w-[1170px] mx-auto px-4 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">What is the Dark Web?</h2>
+        <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8">What is the Dark Web?</h1>
         <div className="flex flex-wrap items-center">
           {/* Image Section */}
           <div className="w-full md:w-1/2">
