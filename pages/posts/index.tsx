@@ -2,12 +2,26 @@ import type { InferGetStaticPropsType } from "next";
 import Link from "next/link";
 import Container from "@/components/container";
 import { getAllPosts } from "lib/getPost";
+import Head from "next/head";
 
 export default function Posts({
   allPosts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const siteUrl = "https://torconnect.io";
+  const pageTitle = "All Posts | TorConnect";
+  const pageDescription = "Explore all our blog posts in one place. Stay updated with the latest guides, tips, and insights on the dark web, privacy, and security.";
+
   return (
     <Container>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={`${siteUrl}/posts`} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={`${siteUrl}/posts`} />
+        <meta property="og:type" content="website" />
+      </Head>
       <div className="max-w-[770px] mx-auto text-center mb-12">
         <h1 className="font-bold text-4xl text-white mb-4">All Posts</h1>
         <p className="text-gray-3">Explore all our blog posts in one place.</p>
