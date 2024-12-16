@@ -110,6 +110,19 @@ export default function PostPage({
               {post.tags?.map((tag) => (
                 <meta key={tag} property="article:tag" content={tag} />
               ))}
+              {/* Twitter Card Meta Tags */}
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:title" content={post.title || "TorConnect Blog"} />
+              <meta
+                name="twitter:description"
+                content={post.excerpt || "Explore topics related to the dark web, privacy, and security."}
+              />
+              <meta
+                name="twitter:image"
+                content={post.image || `${siteUrl}/default-image.jpg`}
+              />
+              <meta name="twitter:site" content="@torconnect2024" />
+              <meta name="twitter:creator" content="@torconnect2024" />
               <link rel="canonical" href={`${siteUrl}/posts/${post.slug}`} />
               <script
                 type="application/ld+json"
