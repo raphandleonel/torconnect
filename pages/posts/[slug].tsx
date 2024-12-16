@@ -85,7 +85,7 @@ export default function PostPage({
               />
               <meta
                 property="og:image"
-                content={post.image || `${siteUrl}/logo/logo.png`}
+                content={`${siteUrl}${post.image}` || `${siteUrl}/logo/logo.png`}
               />
               <meta property="og:url" content={`${siteUrl}/posts/${post.slug}`} />
               <meta property="og:type" content="article" />
