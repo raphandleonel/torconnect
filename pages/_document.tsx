@@ -7,7 +7,6 @@ export default function Document() {
         <meta charSet="utf-8" />
         <meta name="robots" content="follow, index" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="description" content="Explore the Tor Browser, dark web guides, and secure marketplace posts." />
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
