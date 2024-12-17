@@ -30,6 +30,8 @@ export default function Home({ allPosts }: InferGetStaticPropsType<typeof getSta
         />
         <meta name="author" content="TorConnect Team" />
         <link rel="canonical" href={siteUrl} />
+        {/* Microsoft Bing */}
+        <meta name="msvalidate.01" content="79FDC2AA8482724F799CF0E73B68B1BC" />
 
         {/* Open Graph Metadata */}
         <meta property="og:title" content={`${siteName} - Safely Explore the Dark Web`} />
