@@ -1,5 +1,5 @@
 module.exports = {
   siteUrl: 'https://torconnect.io',
-  generateRobotsTxt: true,
+  generateRobotsTxt: false,
   sitemapSize: 7000,
 };

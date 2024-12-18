@@ -2,8 +2,7 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://www.torconnect.io
+
 
 # Sitemaps
-Sitemap: https://www.torconnect.io/sitemap.xml
+Sitemap: https://orconnect.io/sitemap.xml
