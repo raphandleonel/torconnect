@@ -31,7 +31,6 @@ export default function PostPage({
   const readTime = post.readTime || "1 min read";
 
   // Generate Keywords
-  // Generate Keywords
   const keywords = [...new Set([
     ...(post.tags || []),
     post.category,
@@ -110,6 +109,7 @@ export default function PostPage({
               {post.tags?.map((tag) => (
                 <meta key={tag} property="article:tag" content={tag} />
               ))}
+                <meta name="keywords" content={keywords} />
               {/* Twitter Card Meta Tags */}
               <meta name="twitter:card" content="summary_large_image" />
               <meta name="twitter:title" content={post.title || "TorConnect Blog"} />
