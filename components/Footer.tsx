@@ -52,21 +52,21 @@ const Footer: React.FC = (
                 Anubis Market
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/posts/crown-market" className="hover:underline">
                 Crown Market
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link href="/posts/hades-market" className="hover:underline">
                 Hades Market
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link href="/posts/erebus-market" className="hover:underline">
                 Erebus Market
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
