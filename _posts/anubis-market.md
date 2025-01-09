@@ -2,8 +2,8 @@
 title: "Anubis Market"
 excerpt: "Discover how Anubis Market has rapidly emerged as a significant player in the dark web marketplace with its strong focus on user privacy, security, and an extensive range of offerings."
 date: "2024-12-07"
-image: "/images/posts/anubis/anubis-market.png"
-coverImage: "/images/posts/anubis/anubis-market-cover.png"
+image: "/images/posts/anubis/anubis-market-cover.webp"
+coverImage: "/images/posts/anubis/anubis-market-cover.webp"
 category: "Dark Web Marketplaces"
 tags: ["Darknet Markets","Dark Web", "Anubis Market", "Tor Network", "Cybersecurity"]
 author: "TorConnect Team"
