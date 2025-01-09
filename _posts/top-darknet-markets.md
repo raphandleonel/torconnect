@@ -5,7 +5,7 @@ date: "2025-01-09"
 image: "/images/posts/top-darknet-markets-cover.png"
 coverImage: "/images/posts/top-darknet-markets-cover.png"
 category: "Guides"
-tags: ["Dark Web", "Darknet Markets", "Anonymity", "Cybersecurity", "Tor Network"]
+tags: ["Dark Web", "Darknet Markets", "Anonymity", "Cybersecurity", "Tor Network", "top darknet markets 2025"]
 author: "TorConnect Team"
 authorImage: "/images/authors/torconnect-team.png"
 authorBio: "Experts in providing insights and guides to help you navigate the darknet securely and effectively."
