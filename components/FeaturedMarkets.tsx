@@ -7,12 +7,22 @@ const featuredMarkets = allPosts
   .filter((post) => post.category === "Dark Web Marketplaces")
   .sort((a, b) => {
     const customOrder = ["Anubis", "Archtyp", "Drughub", "Torzon", "Abacus"];
-    const indexA = customOrder.findIndex((market) => a.title.includes(market));
-    const indexB = customOrder.findIndex((market) => b.title.includes(market));
+
+    // Ensure case-insensitive and trimmed comparisons
+    const titleA = a.title.toLowerCase().trim();
+    const titleB = b.title.toLowerCase().trim();
+
+    const indexA = customOrder.findIndex((market) => titleA.includes(market.toLowerCase()));
+    const indexB = customOrder.findIndex((market) => titleB.includes(market.toLowerCase()));
+
+    // Handle unmatched titles by placing them at the end
+    if (indexA === -1) return 1;
+    if (indexB === -1) return -1;
 
     // Compare based on the custom order
     return indexA - indexB;
   });
+
 
 
   const renderColoredTitle = (title: string) => {
