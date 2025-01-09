@@ -16,7 +16,6 @@ const featuredMarkets = allPosts
     // Otherwise, keep alphabetical order
     return a.title.localeCompare(b.title);
   })
-  .slice(0, 4);
 
 
   const renderColoredTitle = (title: string) => {
