@@ -6,16 +6,13 @@ export default function FeaturedMarkets({ allPosts }: { allPosts: Post[] }) {
 const featuredMarkets = allPosts
   .filter((post) => post.category === "Dark Web Marketplaces")
   .sort((a, b) => {
-    // Swap Hades Market and Erebus Market
-    if (a.title.includes("Hades Market") && b.title.includes("Erebus Market")) {
-      return -1;
-    }
-    if (a.title.includes("Erebus Market") && b.title.includes("Hades Market")) {
-      return 1; 
-    }
-    // Otherwise, keep alphabetical order
-    return a.title.localeCompare(b.title);
-  })
+    const customOrder = ["Anubis", "Archtyp", "Drughub", "Torzon", "Abacus"];
+    const indexA = customOrder.findIndex((market) => a.title.includes(market));
+    const indexB = customOrder.findIndex((market) => b.title.includes(market));
+
+    // Compare based on the custom order
+    return indexA - indexB;
+  });
 
 
   const renderColoredTitle = (title: string) => {
