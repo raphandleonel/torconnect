@@ -41,21 +41,20 @@ This guide provides an in-depth look at these markets, highlighting their unique
 - [anubisgrlku6ohajojoq52kr6nzixtkfp3jc3pdncgdoykgyfxfutgyd.onion](http://anubisgrlku6ohajojoq52kr6nzixtkfp3jc3pdncgdoykgyfxfutgyd.onion) [copy-button|anubisgrlku6ohajojoq52kr6nzixtkfp3jc3pdncgdoykgyfxfutgyd.onion]
 
 ---
+## 2. Archetyp Market
 
-## 2. Abacus Market
+![Archetyp Market](/images/posts/archetyp/archetyp-market-cover.webp)
 
-![Abacus Market](/images/posts/abacus/abacus-market-cover.webp)
-
-**Overview:** Abacus Market is a well-established dark web marketplace supporting Bitcoin and Monero. With over 25,000 products and a reputable vendor base, Abacus also focuses on harm reduction efforts.
+**Overview:** Archetyp Market is a drug-exclusive darknet marketplace supporting XMR payments only. With worldwide shipping and a modest 5% commission, Archetyp offers a secure and anonymous shopping experience.
 
 **Key Features:**
-- **Escrow & Multisig Support**
-- **25,000+ Products Available**
-- **Focus on Harm Reduction**
+- **XMR-Only Transactions**
+- **Drugs Only Marketplace**
+- **Worldwide Shipping**
 
 **Access Links:**
-- [abacusall6l52n5gp357vpv4yjjvh6ewg65pjbfvacyqcldux66btlqd.onion](http://abacusall6l52n5gp357vpv4yjjvh6ewg65pjbfvacyqcldux66btlqd.onion) [copy-button|abacusall6l52n5gp357vpv4yjjvh6ewg65pjbfvacyqcldux66btlqd.onion]
-- [abacuskzoo7wrfmpqiqscoiljfjap42rzjkfygp5vm3gtlu5tanhbjad.onion](http://abacuskzoo7wrfmpqiqscoiljfjap42rzjkfygp5vm3gtlu5tanhbjad.onion) [copy-button|abacuskzoo7wrfmpqiqscoiljfjap42rzjkfygp5vm3gtlu5tanhbjad.onion]
+- [4pt4axjgzmm4ibmxplfiuvopxzf775e5bqseyllafcecryfthdupjwyd.onion](http://4pt4axjgzmm4ibmxplfiuvopxzf775e5bqseyllafcecryfthdupjwyd.onion) [copy-button|4pt4axjgzmm4ibmxplfiuvopxzf775e5bqseyllafcecryfthdupjwyd.onion]
+- [zjfsopfrwpvqrhiy73vxb6zq7ksyffkzfyow2gmhgvjsseogy65uguyd.onion](http://zjfsopfrwpvqrhiy73vxb6zq7ksyffkzfyow2gmhgvjsseogy65uguyd.onion) [copy-button|zjfsopfrwpvqrhiy73vxb6zq7ksyffkzfyow2gmhgvjsseogy65uguyd.onion]
 
 ---
 
@@ -75,24 +74,7 @@ This guide provides an in-depth look at these markets, highlighting their unique
 
 ---
 
-## 4. Archetyp Market
-
-![Archetyp Market](/images/posts/archetyp/archetyp-market-cover.webp)
-
-**Overview:** Archetyp Market is a drug-exclusive darknet marketplace supporting XMR payments only. With worldwide shipping and a modest 5% commission, Archetyp offers a secure and anonymous shopping experience.
-
-**Key Features:**
-- **XMR-Only Transactions**
-- **Drugs Only Marketplace**
-- **Worldwide Shipping**
-
-**Access Links:**
-- [4pt4axjgzmm4ibmxplfiuvopxzf775e5bqseyllafcecryfthdupjwyd.onion](http://4pt4axjgzmm4ibmxplfiuvopxzf775e5bqseyllafcecryfthdupjwyd.onion) [copy-button|4pt4axjgzmm4ibmxplfiuvopxzf775e5bqseyllafcecryfthdupjwyd.onion]
-- [zjfsopfrwpvqrhiy73vxb6zq7ksyffkzfyow2gmhgvjsseogy65uguyd.onion](http://zjfsopfrwpvqrhiy73vxb6zq7ksyffkzfyow2gmhgvjsseogy65uguyd.onion) [copy-button|zjfsopfrwpvqrhiy73vxb6zq7ksyffkzfyow2gmhgvjsseogy65uguyd.onion]
-
----
-
-## 5. Torzon Market
+## 4. Torzon Market
 
 ![Torzon Market](/images/posts/torzon/torzon-market-cover.webp)
 
@@ -107,6 +89,23 @@ This guide provides an in-depth look at these markets, highlighting their unique
 - [torzon4kv5swfazrziqvel2imhxcckc4otcvopiv5lnxzpqu4v4m5iyd.onion](http://torzon4kv5swfazrziqvel2imhxcckc4otcvopiv5lnxzpqu4v4m5iyd.onion) [copy-button|torzon4kv5swfazrziqvel2imhxcckc4otcvopiv5lnxzpqu4v4m5iyd.onion]
 - [q46wfsee26kj6oead5hg643oi363lgqiz3m45b2dwrizefryu2zdfrqd.onion](http://q46wfsee26kj6oead5hg643oi363lgqiz3m45b2dwrizefryu2zdfrqd.onion) [copy-button|q46wfsee26kj6oead5hg643oi363lgqiz3m45b2dwrizefryu2zdfrqd.onion]
 - [sglgj2fytneccvyn6n4u3pacj4zhdhscfoptnhxxes3uvljmontru2yd.onion](http://sglgj2fytneccvyn6n4u3pacj4zhdhscfoptnhxxes3uvljmontru2yd.onion) [copy-button|sglgj2fytneccvyn6n4u3pacj4zhdhscfoptnhxxes3uvljmontru2yd.onion]
+
+---
+
+## 5. Abacus Market
+
+![Abacus Market](/images/posts/abacus/abacus-market-cover.webp)
+
+**Overview:** Abacus Market is a well-established dark web marketplace supporting Bitcoin and Monero. With over 25,000 products and a reputable vendor base, Abacus also focuses on harm reduction efforts.
+
+**Key Features:**
+- **Escrow & Multisig Support**
+- **25,000+ Products Available**
+- **Focus on Harm Reduction**
+
+**Access Links:**
+- [abacusall6l52n5gp357vpv4yjjvh6ewg65pjbfvacyqcldux66btlqd.onion](http://abacusall6l52n5gp357vpv4yjjvh6ewg65pjbfvacyqcldux66btlqd.onion) [copy-button|abacusall6l52n5gp357vpv4yjjvh6ewg65pjbfvacyqcldux66btlqd.onion]
+- [abacuskzoo7wrfmpqiqscoiljfjap42rzjkfygp5vm3gtlu5tanhbjad.onion](http://abacuskzoo7wrfmpqiqscoiljfjap42rzjkfygp5vm3gtlu5tanhbjad.onion) [copy-button|abacuskzoo7wrfmpqiqscoiljfjap42rzjkfygp5vm3gtlu5tanhbjad.onion]
 
 ---
 
