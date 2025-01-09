@@ -6,7 +6,7 @@ export default function FeaturedMarkets({ allPosts }: { allPosts: Post[] }) {
 const featuredMarkets = allPosts
   .filter((post) => post.category === "Dark Web Marketplaces")
   .sort((a, b) => {
-    const customOrder = ["Anubis", "Archtyp", "Drughub", "Torzon", "Abacus"];
+    const customOrder = ["Anubis", "Archtyp", "DrugHub", "Torzon", "Abacus"];
 
     const indexA = customOrder.findIndex((market) => a.title.includes(market));
     const indexB = customOrder.findIndex((market) => b.title.includes(market));
