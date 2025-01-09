@@ -2,7 +2,7 @@
 title: "Torzon Market"
 excerpt: "Discover Torzon Market, a user-friendly darknet marketplace launched in 2022, supporting BTC and XMR payments, established vendors, and regular updates for improved usability."
 date: "2025-01-09"
-image: "/images/posts/torzon/torzon-market.webp"
+image: "/images/posts/torzon/torzon-market-cover.webp"
 coverImage: "/images/posts/torzon/torzon-market-cover.webp"
 category: "Dark Web Marketplaces"
 tags: ["Darknet Markets", "Torzon Market", "Bitcoin", "Monero", "Dark Web", "Cybersecurity"]
