@@ -8,20 +8,17 @@ const featuredMarkets = allPosts
   .sort((a, b) => {
     const customOrder = ["Anubis", "Archtyp", "Drughub", "Torzon", "Abacus"];
 
-    // Ensure case-insensitive and trimmed comparisons
-    const titleA = a.title.toLowerCase().trim();
-    const titleB = b.title.toLowerCase().trim();
+    const indexA = customOrder.findIndex((market) => a.title.includes(market));
+    const indexB = customOrder.findIndex((market) => b.title.includes(market));
 
-    const indexA = customOrder.findIndex((market) => titleA.includes(market.toLowerCase()));
-    const indexB = customOrder.findIndex((market) => titleB.includes(market.toLowerCase()));
-
-    // Handle unmatched titles by placing them at the end
+    // If either title is not in the custom order, push it to the end
     if (indexA === -1) return 1;
     if (indexB === -1) return -1;
 
-    // Compare based on the custom order
+    // Sort based on the index in customOrder
     return indexA - indexB;
   });
+
 
 
 
