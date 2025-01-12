@@ -13,15 +13,16 @@ import Script from "next/script";
 
 export default function Home({ allPosts }: InferGetStaticPropsType<typeof getStaticProps>) {
   const siteName = "TorConnect";
+  const seoTitle = "Your Guide to Safely Exploring the Dark Web & Top Darknet Markets";
   const siteDescription =
-    "TorConnect is your trusted guide to safely explore the dark web. Learn about Tor Browser, anonymity tools, and the top darknet marketplaces.";
+    "Discover the dark web safely with TorConnect. Your ultimate guide to using the Tor Browser, enhancing anonymity, and exploring top-rated darknet marketplaces.";
   const siteUrl = "https://torconnect.io";
   const ogImage = `${siteUrl}/images/posts/top-darknet-markets-cover.png`;
 
   return (
     <>
       <Head>
-      <title>{`${siteName} - Safely Explore the Dark Web & Darknet Markets`}</title>
+      <title>{seoTitle}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={siteDescription} />
         <meta
@@ -34,7 +35,7 @@ export default function Home({ allPosts }: InferGetStaticPropsType<typeof getSta
         <meta name="msvalidate.01" content="79FDC2AA8482724F799CF0E73B68B1BC" />
 
         {/* Open Graph Metadata */}
-        <meta property="og:title" content={`${siteName} - Safely Explore the Dark Web`} />
+        <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={siteDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={siteUrl} />
@@ -43,7 +44,7 @@ export default function Home({ allPosts }: InferGetStaticPropsType<typeof getSta
 
         {/* Twitter Card Metadata */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${siteName} - Safely Explore the Dark Web`} />
+        <meta name="twitter:title" content={seoTitle} />
         <meta name="twitter:description" content={siteDescription} />
         <meta name="twitter:image" content={ogImage} />
         {/* Structured Data for Site Links */}
