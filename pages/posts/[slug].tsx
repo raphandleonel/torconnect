@@ -75,12 +75,12 @@ export default function PostPage({
           <div className="lg:w-3/4">
             <Head>
               <title>{post.title || "TorConnect Blog"}</title>
-              <meta name="description" content={post.excerpt || "Learn more on TorConnect"} />
+              <meta name="description" content={post.excerpt?.slice(0, 150) || "Learn more on TorConnect"} />
               <meta name="author" content={post.author || "Unknown"} />
               <meta property="og:title" content={post.title || "TorConnect Blog"} />
               <meta
                 property="og:description"
-                content={post.excerpt || "Explore topics related to the dark web, privacy, and security."}
+                content={post.excerpt?.slice(0, 150) || "Explore topics related to the dark web, privacy, and security."}
               />
               <meta
                 property="og:image"
@@ -115,7 +115,7 @@ export default function PostPage({
               <meta name="twitter:title" content={post.title || "TorConnect Blog"} />
               <meta
                 name="twitter:description"
-                content={post.excerpt || "Explore topics related to the dark web, privacy, and security."}
+                content={post.excerpt?.slice(0, 150) || "Explore topics related to the dark web, privacy, and security."}
               />
               <meta
                 name="twitter:image"
