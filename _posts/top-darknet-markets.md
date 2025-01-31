@@ -1,5 +1,5 @@
 ---
-title: "Top Darknet Markets in 2025"
+title: "Top Darknet Markets in 2025: Best & Most Secure Marketplaces"
 excerpt: "Explore the top darknet markets of 2025, featuring Anubis Market, Abacus Market, DrugHub Market, Archetyp Market, and Torzon Market."
 date: "2025-01-30"
 image: "/images/posts/top-darknet-markets-cover.png"

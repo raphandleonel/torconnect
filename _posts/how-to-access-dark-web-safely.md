@@ -1,5 +1,5 @@
 ---
-title: "How to Access the Dark Web Safely"
+title: "How to Access the Dark Web Safely: A Step-by-Step Guide"
 excerpt: "A step-by-step guide to safely accessing the dark web while maintaining your anonymity and security."
 date: "2023-12-01"
 category: "Guides"

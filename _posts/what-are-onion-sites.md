@@ -1,5 +1,5 @@
 ---
-title: "What Are Onion Sites?"
+title: "What Are Onion Sites? A Guide to Accessing the Dark Web"
 excerpt: "An insightful look into what onion sites are, their purpose, and how they operate within the hidden layers of the internet."
 date: "2024-12-03"
 category: "Guides"

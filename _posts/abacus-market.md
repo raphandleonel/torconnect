@@ -1,5 +1,5 @@
 ---
-title: "Abacus Market"
+title: "Abacus Market: Top Darknet Marketplace with 25,000+ Listings"
 excerpt: "Explore Abacus Market, a well-established darknet marketplace featuring over 25,000 products, escrow services, and a focus on harm reduction. Learn why it stands out in 2025."
 date: "2025-01-09"
 image: "/images/posts/abacus/abacus-market-cover.webp"

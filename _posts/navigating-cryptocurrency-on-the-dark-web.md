@@ -1,5 +1,5 @@
 ---
-title: "Navigating Cryptocurrency on the Dark Web"
+title: "Navigating Cryptocurrency on the Dark Web: Safety & Tips"
 excerpt: "Cryptocurrencies are the backbone of dark web transactions. Learn how they are used, the risks involved, and best practices for secure transactions."
 date: "2023-12-02"
 category: "Guides"

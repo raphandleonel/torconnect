@@ -1,5 +1,5 @@
 ---
-title: "Anubis Market"
+title: "Anubis Market: Leading Darknet Marketplace with 40,000+ Listings"
 excerpt: "Discover how Anubis Market has rapidly emerged as a significant player in the dark web marketplace with its strong focus on user privacy, security, and an extensive range of offerings."
 date: "2024-12-07"
 image: "/images/posts/anubis/anubis-market-cover.webp"

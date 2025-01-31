@@ -1,5 +1,5 @@
 ---
-title: "How to Use Tor Browser Safely in 2024"
+title: "How to Use Tor Browser Safely in 2025: Privacy & Security Tips"
 excerpt: "Learn how to use the Tor browser to browse anonymously and access the dark web safely in 2024."
 date: "2024-12-02"
 slug: "how-to-use-tor-browser"

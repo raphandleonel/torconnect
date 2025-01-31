@@ -35,16 +35,16 @@ export default function PostPage({
     ...(post.tags || []),
     post.category,
     post.title,
-    "dark web",
-    "privacy",
-    "security",
-    "Tor Browser",
-    "Tor Project",
-    "Darknet",
-    "Anonymity",
-    "Online Privacy",
-    "Dark Web Marketplace",
-    "Dark Web Market",
+    // "dark web",
+    // "privacy",
+    // "security",
+    // "Tor Browser",
+    // "Tor Project",
+    // "Darknet",
+    // "Anonymity",
+    // "Online Privacy",
+    // "Dark Web Marketplace",
+    // "Dark Web Market",
   ])].filter(Boolean).join(", ");
 
 
@@ -109,7 +109,7 @@ export default function PostPage({
               {post.tags?.map((tag) => (
                 <meta key={tag} property="article:tag" content={tag} />
               ))}
-                <meta name="keywords" content={keywords} />
+              <meta name="keywords" content={keywords} />
               {/* Twitter Card Meta Tags */}
               <meta name="twitter:card" content="summary_large_image" />
               <meta name="twitter:title" content={post.title || "TorConnect Blog"} />
@@ -153,7 +153,7 @@ export default function PostPage({
                   </p>
                 )}
                 <h1 className="font-bold text-2xl sm:text-4xl lg:text-5xl text-white mb-5">
-                  {post.title.split(':')[0]}
+                  {post.title.replace(/:.*$/, '')} - Trusted Insights from TorConnect
                 </h1>
                 <p className="text-gray-4">{post.excerpt}</p>
                 <div className="flex justify-center items-center gap-4 mt-4 text-sm text-gray-4">
