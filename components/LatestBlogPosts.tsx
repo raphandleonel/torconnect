@@ -35,16 +35,16 @@ export default function LatestBlogPosts({ allPosts }: { allPosts: Post[] }) {
               className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300"
             >
               <Link href={`/posts/${post.slug}`}>
-            <Image
-    src={post.coverImage || post.image}
-    alt={post.title}
-    width={300}
-    height={200}
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px"
-    priority // Ensures the first image loads faster
-    quality={90} // Optimized image quality for better compression
-    className="rounded-lg w-full object-cover"
-  />
+                <Image
+                  src={post.coverImage || post.image}
+                  alt={post.title}
+                  width={300}
+                  height={200}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px"
+                  priority // Ensures the first image loads faster
+                  quality={90} // Optimized image quality for better compression
+                  className="rounded-lg w-full object-cover"
+                />
               </Link>
               <div className="p-4">
                 <Link href={`/posts/${post.slug}`}>
