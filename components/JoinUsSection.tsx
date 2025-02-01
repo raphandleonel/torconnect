@@ -5,33 +5,33 @@ const JoinUsSection: React.FC = () => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-const handleSubscribe = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setStatus("idle");
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("idle");
 
-  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    setStatus("error");
-    return;
-  }
-
-  try {
-    const response = await fetch("/api/newsletter", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email }),
-    });
-
-    if (!response.ok) {
-      throw new Error("Failed to subscribe.");
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setStatus("error");
+      return;
     }
 
-    setStatus("success");
-    setEmail(""); // Clear the email field on success
-  } catch (error) {
-    console.error("Subscription error:", error);
-    setStatus("error");
-  }
-};
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to subscribe.");
+      }
+
+      setStatus("success");
+      setEmail(""); // Clear the email field on success
+    } catch (error) {
+      console.error("Subscription error:", error);
+      setStatus("error");
+    }
+  };
 
   return (
     <section className="py-16 relative bg-gradient-to-r from-blue-800 to-blue-900 text-white overflow-hidden rounded-[20px] shadow-xl">
@@ -39,10 +39,11 @@ const handleSubscribe = async (e: React.FormEvent) => {
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/newsletter/bg-dots.svg"
-          alt="background dots"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-20"
+          alt="Decorative background dots"
+          fill
+          sizes="100vw"
+          priority // Ensures fast loading for background images
+          className="opacity-20 object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-dark-900 opacity-50"></div>
       </div>

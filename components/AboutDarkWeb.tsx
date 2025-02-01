@@ -10,11 +10,14 @@ export default function AboutDarkWeb() {
           {/* Image Section */}
           <div className="w-full md:w-1/2">
             <Link href={`/posts/step-by-step-guide-to-access-dark-web`}>
-              <Image
+               <Image
                 src="/images/posts/about-darkweb.png"
-                alt="Dark Web"
+                alt="Illustration of the Dark Web - Learn how to access it safely"
                 width={600}
-                height={300} // Adjusted height for proportional image
+                height={400} // Fixed height to maintain aspect ratio
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                priority // Ensures this loads early
+                quality={90} // High-quality image compression
                 className="rounded-lg shadow-lg hover:opacity-90 transition-opacity"
               />
             </Link>

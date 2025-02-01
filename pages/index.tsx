@@ -15,7 +15,7 @@ export default function Home({ allPosts }: InferGetStaticPropsType<typeof getSta
   const siteName = "TorConnect";
   const seoTitle = "Your Guide to Safely Exploring the Dark Web & Top Darknet Markets";
   const siteDescription =
-    "Discover the dark web safely with TorConnect. Your ultimate guide to using the Tor Browser, enhancing anonymity, and exploring top-rated darknet marketplaces.";
+    "Discover the dark web safely with TorConnect. Your ultimate guide to using the Tor Browser, enhancing anonymity, and exploring top darknet markets.";
   const siteUrl = "https://torconnect.io";
   const ogImage = `${siteUrl}/images/posts/top-darknet-markets-cover.png`;
 

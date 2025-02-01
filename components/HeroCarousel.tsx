@@ -9,10 +9,10 @@ export default function HeroCarousel({ allPosts }: { allPosts: Post[] }) {
 
   useEffect(() => {
     const featuredMarkets = allPosts.filter((post) => post.category === 'Dark Web Marketplaces');
-  // Filter posts to exclude "Dark Web Marketplaces" and take the first 5
-  const latestPosts = allPosts
-    .filter((post) => post.category !== "Dark Web Marketplaces")
-    .slice(0, 5);
+    // Filter posts to exclude "Dark Web Marketplaces" and take the first 5
+    const latestPosts = allPosts
+      .filter((post) => post.category !== "Dark Web Marketplaces")
+      .slice(0, 5);
     setHeroItems([...latestPosts, ...featuredMarkets]);
   }, [allPosts]);
 
@@ -51,11 +51,11 @@ export default function HeroCarousel({ allPosts }: { allPosts: Post[] }) {
                 <Image
                   src={slide.coverImage || slide.image}
                   alt={slide.title}
-                  layout="fill"
-                  objectFit="cover"
-                  objectPosition="center"
-                  className="w-full h-full"
-                  priority={index === currentIndex} // Optimize the current image
+                  fill
+                  sizes="(max-width: 1200px) 100vw, 1200px"
+                  priority={index === currentIndex} // Load only the visible image first
+                  quality={90} // Better compression
+                  className="rounded-lg"
                 />
               </div>
 
@@ -85,11 +85,10 @@ export default function HeroCarousel({ allPosts }: { allPosts: Post[] }) {
             <button
               key={index}
               onClick={() => handleSlideChange(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentIndex
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex
                   ? 'bg-blue-600 scale-110'
                   : 'bg-gray-5 hover:bg-gray-4'
-              }`}
+                }`}
             />
           ))}
         </div>

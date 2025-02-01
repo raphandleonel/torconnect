@@ -3,21 +3,21 @@ import Link from "next/link";
 import { Post } from "interfaces";
 
 export default function FeaturedMarkets({ allPosts }: { allPosts: Post[] }) {
-const featuredMarkets = allPosts
-  .filter((post) => post.category === "Dark Web Marketplaces")
-  .sort((a, b) => {
-    const customOrder = ["Anubis", "Archetyp", "DrugHub", "Torzon", "Abacus"];
+  const featuredMarkets = allPosts
+    .filter((post) => post.category === "Dark Web Marketplaces")
+    .sort((a, b) => {
+      const customOrder = ["Anubis", "Archetyp", "DrugHub", "Torzon", "Abacus"];
 
-    const indexA = customOrder.findIndex((market) => a.title.includes(market));
-    const indexB = customOrder.findIndex((market) => b.title.includes(market));
+      const indexA = customOrder.findIndex((market) => a.title.includes(market));
+      const indexB = customOrder.findIndex((market) => b.title.includes(market));
 
-    // If either title is not in the custom order, push it to the end
-    if (indexA === -1) return 1;
-    if (indexB === -1) return -1;
+      // If either title is not in the custom order, push it to the end
+      if (indexA === -1) return 1;
+      if (indexB === -1) return -1;
 
-    // Sort based on the index in customOrder
-    return indexA - indexB;
-  });
+      // Sort based on the index in customOrder
+      return indexA - indexB;
+    });
 
 
 
@@ -27,9 +27,8 @@ const featuredMarkets = allPosts
     return words.map((word, index) => (
       <span
         key={index}
-        className={`${
-          index % 2 === 0 ? "text-pink-dark" : "text-white"
-        } font-bold`}
+        className={`${index % 2 === 0 ? "text-pink-dark" : "text-white"
+          } font-bold`}
       >
         {word}{" "}
       </span>
@@ -55,9 +54,12 @@ const featuredMarkets = allPosts
                     src={market.coverImage || market.image}
                     alt={market.title}
                     fill
-                    className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority // Loads the first image faster
+                    quality={90} // Better image compression
+                    className="rounded-lg object-cover"
                   />
+
                 </div>
               </Link>
 
