@@ -131,4 +131,47 @@ Most markets allow you to view listings without creating an account, but registr
 ### What are escrow services, and why are they important?
 Escrow services act as intermediaries between buyers and sellers, ensuring funds are only released once both parties fulfill their obligations. All top markets listed here use escrow to protect users.
 
+### **How is the dark web different from the deep web?**
+The **deep web** includes all online content that **isn’t indexed by search engines**, such as private emails, medical records, academic databases, and company intranets. This content requires login credentials or direct access permissions.
+
+The **dark web**, however, is a **smaller subset of the deep web** that requires specialized tools—like the **Tor browser**—to access. Unlike the deep web, which consists mainly of **legitimate private content**, the dark web includes **hidden marketplaces, anonymous forums, and privacy-focused communication platforms**.
+
+### **What is the Tor browser, and why is it used?**
+The **Tor browser (The Onion Router)** is a privacy-focused tool designed to enable **anonymous browsing** by routing internet traffic through a network of **encrypted relay nodes**. This makes it difficult to trace a user’s IP address or monitor their activities.
+
+Originally developed by the **U.S. Navy** for secure communications, Tor is now widely used by journalists, activists, and privacy advocates. However, it has also gained notoriety as the primary tool for accessing **darknet marketplaces and illicit services**.
+
+### **Is it legal to visit dark web sites?**
+Yes, simply **browsing** the dark web is **not illegal** in most countries. There are many **legitimate uses** for the darknet, such as:
+
+- **Secure communication** for journalists and whistleblowers
+- **Accessing uncensored information** in regions with heavy internet restrictions
+- **Privacy-focused forums** that discuss cybersecurity, cryptography, and free speech
+
+However, engaging in **illegal activities**—such as buying illicit goods, hacking services, or financial fraud—**can lead to legal consequences**.
+
+### **What are the risks of using the dark web?**
+While the dark web offers **privacy and anonymity**, it also comes with **significant risks**, including:
+
+- **Malware and viruses** – Many darknet websites contain **hidden exploits** designed to steal data or infect devices.
+- **Scams and fraud** – Fake marketplaces and phishing sites attempt to steal cryptocurrencies and personal information.
+- **Law enforcement surveillance** – Many dark web activities are **monitored by authorities**, leading to potential **sting operations and arrests**.
+- **Data breaches** – Personal credentials and financial information are often traded on darknet forums.
+
+To browse the dark web safely, users should take precautions such as:
+
+✔ Using **a VPN** with Tor for extra anonymity  
+✔ Avoiding **downloading unknown files**  
+✔ Verifying **market reputations** before transactions  
+
+### **How do businesses and cybersecurity firms monitor the dark web?**
+Many cybersecurity firms use **dark web intelligence tools** to track **stolen credentials, leaked corporate data, and potential cyber threats**. This is known as **dark web monitoring**, which helps organizations:
+
+- Detect **data breaches** before they escalate
+- Identify **leaked employee or customer information**
+- Track **cybercriminal activity related to their brand**
+- Prevent **fraud and financial crimes**  
+
+Some advanced tools provide **real-time alerts** when sensitive information appears on darknet marketplaces, allowing companies to **act quickly to mitigate risks**.
+
 ---
