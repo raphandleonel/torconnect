@@ -70,7 +70,7 @@ export default function PostPage({
       {router.isFallback ? (
         <div>Loading…</div>
       ) : (
-        <div className="lg:flex lg:space-x-8 relative">
+        <article className="lg:flex lg:space-x-8 relative">
           {/* Main Content */}
           <div className="lg:w-3/4">
             <Head>
@@ -144,7 +144,7 @@ export default function PostPage({
         `}
             </Script>
             <section className="p-4">
-              <div className="text-center">
+              <header  className="text-center">
                 {post.category && (
                   <p
                     className="inline-flex text-blue bg-blue/[0.08] font-medium text-sm py-1 px-3 rounded-full mb-1"
@@ -165,7 +165,7 @@ export default function PostPage({
                     </>
                   )}
                 </div>
-              </div>
+              </header>
               {/* Breadcrumb */}
               <nav className="text-sm sm:text-base text-gray-4 mt-6 flex items-center">
                 <ol className="flex flex-wrap items-center gap-1">
@@ -233,12 +233,12 @@ export default function PostPage({
           </div>
 
           {/* Related Posts */}
-          <div className="lg:w-1/4 mt-12 lg:mt-0">
+          <aside className="lg:w-1/4 mt-12 lg:mt-0">
             <div className="lg:sticky lg:top-[50vh] lg:-translate-y-1/2 bg-gradient-to-r from-gray-9 rounded-[20px] to-blue-dark text-white py-5 px-5">
               <h2 className="text-xl font-bold mb-4 text-white">Related Posts</h2>
-              <div className="space-y-4">
+              <ul  className="space-y-4">
                 {relatedPosts.map((relatedPost) => (
-                  <div
+                  <li
                     key={relatedPost.slug}
                     className="flex items-center gap-4 bg-gray-700 p-3 rounded-lg"
                   >
@@ -247,7 +247,7 @@ export default function PostPage({
                       href={`/posts/${relatedPost.slug}`}
                       className="block w-16 h-16 rounded overflow-hidden flex-shrink-0"
                     >
-                      <div className="w-full h-full">
+                      <div  className="w-full h-full">
                         <Image
                           src={relatedPost.image || relatedPost.coverImage || "/default-image.jpg"}
                           alt={relatedPost.title}
@@ -275,13 +275,13 @@ export default function PostPage({
                         })}
                       </p>
                     </div>
-                  </div>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
-          </div>
+          </aside>
 
-        </div>
+        </article>
 
       )}
       <Comment />
