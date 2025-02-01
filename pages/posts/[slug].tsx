@@ -205,16 +205,22 @@ export default function PostPage({
 
 
               {(post.image || post.coverImage) && (
-                <div className="relative w-full mt-6 mb-8">
+                <figure className="w-full mt-6 mb-8">
+                <div
+                  className="relative w-full"
+                  style={{ paddingBottom: "56.25%" }}
+                >
+                  {/* 16:9 aspect ratio */}
                   <Image
-                    src={post.coverImage || post.image}
+                     src={post.coverImage || post.image}
                     alt={post.title}
-                    layout="responsive"
-                    width={800}
-                    height={450}
-                    className="rounded-lg object-cover"
+                    fill
+                    style={{ objectFit: "cover" }} // Replaces objectFit="cover"
+                    loading="lazy"
+                    className="rounded-lg"
                   />
                 </div>
+              </figure>
               )}
 
               <div className="prose prose-lg prose-invert text-white max-w-full break-words overflow-hidden custom-prose-class">

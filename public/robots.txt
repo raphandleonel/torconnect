@@ -1,6 +1,7 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /*.onion$
 
 # Sitemaps
 Sitemap: https://torconnect.io/sitemap.xml
