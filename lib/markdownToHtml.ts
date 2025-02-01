@@ -5,8 +5,17 @@ import html from "remark-html";
 export default async function markdownToHtml(markdown: VFileCompatible) {
   const result = await remark().use(html).process(markdown);
 
+ let htmlString = result.toString();
+
+  // Automatically add `rel="nofollow noopener noreferrer"` to all <a> tags
+  htmlString = htmlString.replace(
+    /<a\s+(?![^>]*\brel=)[^>]*href="([^"]+)"([^>]*)>/g,
+    (match, href, rest) =>
+      `<a href="${href}" rel="nofollow noopener noreferrer"${rest}>`
+  );
+
   // Replace `[copy-button|link]` with an enhanced copy button
-  const htmlString = result.toString().replace(
+  htmlString = htmlString.replace(
     /\[copy-button\|([^\]]+)\]/g,
     (match, link) =>
       `<button class="copy-btn text-blue h-6 w-6 font-extrabold" data-link="${link}" onclick="copyToClipboard(this, '${link}')">
